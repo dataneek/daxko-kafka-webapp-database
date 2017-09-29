@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[MemberChangeset] (
     [MemberChangesetId] INT                IDENTITY (600001, 1) NOT NULL,
-    [MemberId]          INT                NOT NULL,
+    [MemberId]          UNIQUEIDENTIFIER   NOT NULL,
     [Changeset]         NVARCHAR (MAX)     NOT NULL,
     [ChangesetMode]     INT                NOT NULL,
     [Created]           DATETIME CONSTRAINT [DF_MemberChangeset_Created] DEFAULT (GETUTCDATE()) NOT NULL,
