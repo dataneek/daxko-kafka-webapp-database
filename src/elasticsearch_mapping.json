@@ -1,0 +1,56 @@
+# copy and paste into kibana console or make PUT request to localhost:9200/members with JSON body
+# PUT members
+{
+  "mappings": {
+    "member": {
+      "properties": {
+        "Birthdate": {
+          "type": "date"
+        },
+        "Created": {
+          "type": "date"
+        },
+        "Email": {
+          "type": "keyword",
+          "copy_to": "suggest"
+        },
+        "FirstName": {
+          "type": "text",
+          "copy_to": ["FullName","suggest"]
+        },
+        "FullName": {
+          "type": "text"
+        },
+        "Gender": {
+          "type": "integer"
+        },
+        "LastName": {
+          "type": "text",
+          "copy_to": ["FullName","suggest"]
+        },
+        "LastUpdated": {
+          "type": "date"
+        },
+        "MemberId": {
+          "type": "integer"
+        },
+        "Phone": {
+          "type": "text",
+          "copy_to": "suggest"
+        },
+        "id": {
+          "type": "long"
+        },
+        "operation": {
+          "type": "text"
+        },
+        "timestamp": {
+          "type": "date"
+        },
+        "suggest": {
+          "type": "completion"
+        }
+      }
+    }
+  }
+}
