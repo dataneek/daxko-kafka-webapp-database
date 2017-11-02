@@ -13,7 +13,7 @@
     <RootPath>
     </RootPath>
     <RootNamespace>Database</RootNamespace>
-    <AssemblyName>checkins-database</AssemblyName>
+    <AssemblyName>checkins-database-temporal-tables</AssemblyName>
     <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -68,6 +68,7 @@
     <Build Include="dbo\Tables\Member.sql" />
     <Build Include="dbo\Tables\Location.sql" />
     <Build Include="dbo\Tables\MemberChangeset.sql" />
+    <Build Include="dbo\Tables\LocationCheckInChangeset.sql" />
     <Build Include="dbo\Tables\LocationChangeset.sql" />
   </ItemGroup>
 </Project>
