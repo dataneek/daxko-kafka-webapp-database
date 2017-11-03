@@ -1,7 +1,6 @@
 ﻿CREATE TABLE [dbo].[LocationChangeset] (
     [LocationId]   INT                NOT NULL,
     [LocationName] NVARCHAR (50)      NOT NULL,
-    [IsDeleted]    BIT                NOT NULL,
     [Created]      DATETIMEOFFSET (7) NOT NULL,
     [LastUpdated]  DATETIMEOFFSET (7) NULL,
     [RowId]        UNIQUEIDENTIFIER   NOT NULL,

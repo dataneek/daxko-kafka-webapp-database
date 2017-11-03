@@ -6,7 +6,6 @@
     [Phone]       NVARCHAR (50)                               NOT NULL,
     [Gender]      INT                                         NOT NULL,
     [Birthdate]   DATE                                        NOT NULL,
-    [IsDeleted]   BIT                                         CONSTRAINT [DF_Member_IsDeleted] DEFAULT ((0)) NOT NULL,
     [Created]     DATETIMEOFFSET (7)                          CONSTRAINT [DF_Member_Created] DEFAULT (sysdatetimeoffset()) NOT NULL,
     [LastUpdated] DATETIMEOFFSET (7)                          NULL,
     [RowId]       UNIQUEIDENTIFIER                            CONSTRAINT [DF_Member_RowId] DEFAULT (newid()) NOT NULL,

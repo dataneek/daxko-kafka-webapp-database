@@ -3,7 +3,6 @@
     [LocationId]        INT                NOT NULL,
     [MemberId]          INT                NOT NULL,
     [CheckinCompleted]  DATETIMEOFFSET (7) NOT NULL,
-    [IsDeleted]         BIT                NOT NULL,
     [Created]           DATETIMEOFFSET (7) NOT NULL,
     [LastUpdated]       DATETIMEOFFSET (7) NULL,
     [RowId]             UNIQUEIDENTIFIER   NOT NULL,

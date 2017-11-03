@@ -6,7 +6,6 @@
     [Phone]       NVARCHAR (50)      NOT NULL,
     [Gender]      INT                NOT NULL,
     [Birthdate]   DATE               NOT NULL,
-    [IsDeleted]   BIT                NOT NULL,
     [Created]     DATETIMEOFFSET (7) NOT NULL,
     [LastUpdated] DATETIMEOFFSET (7) NULL,
     [RowId]       UNIQUEIDENTIFIER   NOT NULL,
